@@ -5,6 +5,6 @@ class CaixaDAgua (
     val capacidade: Double?,
     val altura: Double,
     val largura: Double,
-    val profundida: Double,
+    val profundidade: Double,
     val blablablabla: String,
 )
