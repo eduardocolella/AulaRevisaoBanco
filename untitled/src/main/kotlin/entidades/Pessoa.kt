@@ -1,0 +1,16 @@
+package org.example.entidades
+
+import java.math.BigDecimal
+
+open class Pessoa(
+//Atributos repetidos do Entidade.Profissional e Entidade.Cliente vão aqui
+    val nome : String,
+    val idade : Int,
+    val sexo : String,//Podemos usar CTRL+SHIFT+R para substituir em massa
+    val cpf : String
+){
+    //Comportamento
+    open fun receberConta(conta : Conta, aReceber : BigDecimal){
+        conta.saldo = conta.saldo.add(aReceber)
+    }
+}
