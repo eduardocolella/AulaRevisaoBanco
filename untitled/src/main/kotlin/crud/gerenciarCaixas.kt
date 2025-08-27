@@ -1,10 +1,11 @@
 package org.example.crud
 
+import org.example.entidades.CaixaDAgua
 import org.example.enumeradores.Material
 
 fun cadastrarCaixa(){
     /*
-        val material: String,
+    val material: String,
     val capacidade: Double?,
     val altura: Double,
     val largura: Double,
@@ -41,7 +42,19 @@ fun cadastrarCaixa(){
     val altura = readln().toDouble()
 
     println("blablablabla da Caixa: ")
-    val blabla = readln().toDouble()
+    val blabla = readln().toString()
+
+    println("Material da Caixa: ")
+    val materialCaixa = readln().toString()
+
+    CaixaDAgua(
+        material = materialCaixa,
+        litros = litros,
+        profundidade = prof,
+        largura = larg,
+        blablablabla = blabla,
+        altura = altura,
+    )
 }
 
 fun editarCaixa(){
